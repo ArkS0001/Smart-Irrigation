@@ -50,3 +50,48 @@
 |  (Execute irrigation and log event for continuous learning) |
 +-------------------------------------------------------------+
 ```
+```
++-------------------------------------------------------------+
+|          Build a Digital Twin / Environment Simulator       |
+| (Models soil physics, evaporation, plant water uptake)      |
+|           [Uses the same data as the supervised model]      |
++-------------------------------------------------------------+
+                               |
+                               v
++-------------------------------------------------------------+
+|          Initialize RL Agent with a Random Policy           |
+|                (e.g., a Deep Q-Network - DQN)               |
++-------------------------------------------------------------+
+                               |
++------------------------------v------------------------------+
+|                        TRAINING LOOP                        |
+|                                                             |
+|   1. Agent observes the current STATE from the simulator.   |
+|                                                             |
+|   2. Agent chooses an ACTION based on its current policy.   |
+|      (Initially random, gets smarter over time)             |
+|                                                             |
+|   3. Simulator executes the ACTION and calculates the       |
+|      next STATE and the REWARD.                             |
+|                                                             |
+|   4. Agent stores the experience (State, Action, Reward,    |
+|      Next State) in its memory.                             |
+|                                                             |
+|   5. Agent updates its policy (trains its neural network)   |
+|      to maximize future rewards.                            |
+|                                                             |
+|   6. Repeat for millions of simulated days.                 |
++-------------------------------------------------------------+
+                               |
+                               v
++-------------------------------------------------------------+
+|          Deploy the Trained Policy (the "smart agent")      |
+|                to the real-world irrigation system.         |
++-------------------------------------------------------------+
+                               |
+                               v
++-------------------------------------------------------------+
+|              Live Operation & Fine-Tuning                   |
+| (Agent controls real irrigation, continues to learn slowly) |
++-------------------------------------------------------------+
+```
