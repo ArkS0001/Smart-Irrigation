@@ -1,5 +1,8 @@
 # Smart-Irrigation
 
+<img width="1024" height="1536" alt="dataflow smart irrigation" src="https://github.com/user-attachments/assets/a175df3b-3517-4460-9eb1-9718fbc83100" />
+
+
 ```
 +-------------------------------------------------------------+
 |               Data Sources & Real-time Feeds                |
