@@ -2,6 +2,8 @@
 
 <img width="1024" height="1536" alt="dataflow smart irrigation" src="https://github.com/user-attachments/assets/a175df3b-3517-4460-9eb1-9718fbc83100" />
 
+![Untitled](https://github.com/user-attachments/assets/5a3905c4-fedc-4569-b0b8-b44684f05d44)
+
 
 ```
 +-------------------------------------------------------------+
